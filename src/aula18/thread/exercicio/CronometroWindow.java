@@ -9,7 +9,6 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
-import javax.swing.UIManager;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -55,10 +54,10 @@ public class CronometroWindow extends JFrame {
 	
 	private void pararContagem() {
 		
-		this.cronometroThread.suspend();
+		this.cronometroThread.interrupt();
 		
 		this.btnIniciar.setEnabled(true);
-        this.btnParar.setEnabled(false);
+		this.btnParar.setEnabled(false);		
 	}
 
 	private void initComponents() {

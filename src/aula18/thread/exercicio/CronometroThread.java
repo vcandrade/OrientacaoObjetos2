@@ -26,12 +26,12 @@ public class CronometroThread extends Thread {
                 this.cronometroWindow.getLblContador().setText(String.valueOf(cronometroWindow.getContador()));
                 this.cronometroWindow.setContador(cronometroWindow.getContador() + 1);
 
-                this.sleep(1000);
+                Thread.sleep(1000);
             }
             
         } catch (InterruptedException ex) {
         
-            JOptionPane.showMessageDialog(null, "Erro: " + ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Thread Interrompida", "Cronômetro", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 }
