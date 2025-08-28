@@ -6,7 +6,7 @@ public class PedidoTeste {
 
 		Pedido pedido1 = new Pedido(111, "02/05/2024");
 		pedido1.imprimirPedido();
-		
+
 		pedido1.alterarStatusPedido(Status.PROCESSANDO);
 		pedido1.imprimirPedido();
 

@@ -8,11 +8,7 @@ public class Veiculo {
 	protected int numeroPassageiros;
 	protected String combustivel;
 
-	public Veiculo(String modelo, 
-			       String fabricante, 
-			       int anoFabricacao, 
-			       int numeroPassageiros, 
-			       String combustivel) {
+	public Veiculo(String modelo, String fabricante, int anoFabricacao, int numeroPassageiros, String combustivel) {
 
 		this.modelo = modelo;
 		this.fabricante = fabricante;
@@ -26,10 +22,3 @@ public class Veiculo {
 		System.out.println(this.fabricante + " " + this.modelo + " está abastecendo.");
 	}
 }
-
-
-
-
-
-
-
