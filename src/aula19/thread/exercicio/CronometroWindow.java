@@ -28,13 +28,25 @@ public class CronometroWindow extends JFrame {
 	public CronometroWindow() {
 
 		this.initComponents();
+		this.iniciarBotoes();
 		this.contador = 0;
+	}
+	
+	private void iniciarBotoes() {
+
+		this.btnIniciar.setEnabled(true);
+		this.btnReiniciar.setEnabled(false);
+		this.btnParar.setEnabled(false);
 	}
 
 	private void iniciarContagem() {
 		
 		cronometroThread = new CronometroThread(this);
 		cronometroThread.start();
+		
+		this.btnIniciar.setEnabled(false);
+		this.btnReiniciar.setEnabled(true);
+		this.btnParar.setEnabled(true);
 	}
 
 	private void reiniciarContagem() {
@@ -46,6 +58,9 @@ public class CronometroWindow extends JFrame {
 	private void pararContagem() {
 		
 		this.cronometroThread.interrupt();
+		
+		this.btnIniciar.setEnabled(true);
+        this.btnParar.setEnabled(false);
 	}
 
 	private void initComponents() {
