@@ -85,7 +85,7 @@ public class Banco {
 		contaBancaria.realizarSaque(valor);
 	}
 
-	public void realizarDeposito(int numeroConta, double valor) {
+	public void realizarDepositoConta(int numeroConta, double valor) {
 
 		ContaBancaria contaBancaria = this.buscarConta(numeroConta);
 

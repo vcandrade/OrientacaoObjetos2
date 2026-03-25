@@ -15,8 +15,7 @@ public class ContaBancaria {
 	
 	public void verificarSaldo() {
 		
-		System.out.println("Número Conta: " + this.numeroConta + "\t"
-				         + "Titular: " + this.nomeTitular + "\n"
+		System.out.println("Número Conta: " + this.numeroConta + "\tTitular: " + this.nomeTitular + "\n"
 				         + "Saldo: " + this.saldo + "\n");
 	}
 	
@@ -41,7 +40,7 @@ public class ContaBancaria {
 		this.saldo += valor;
 		
 		System.out.println("\nNúmero Conta: " + this.numeroConta +"\n"
-                         + "Depósito de R$" + valor + " realizado com sucesso.\n");
+                         + "Depósito de R$" + valor + " realizado com sucesso.");
 	}
 	
 	public int getNumeroConta() {
