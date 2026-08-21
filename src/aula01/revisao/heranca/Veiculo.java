@@ -19,6 +19,11 @@ public class Veiculo {
 
 	public void abastecer() {
 
-		System.out.println(this.fabricante + " " + this.modelo + " está abastecendo.");
+		System.out.println(this.fabricante + " " + this.getModelo() + " está abastecendo.");
+	}
+
+	public String getModelo() {
+
+		return this.modelo;
 	}
 }

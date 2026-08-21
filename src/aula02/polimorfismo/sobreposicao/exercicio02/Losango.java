@@ -25,7 +25,3 @@ public class Losango extends Quadrilatero {
 		System.out.println(losango + " de área " + this.calcularArea() + "cm2.");
 	}
 }
-
-
-
-

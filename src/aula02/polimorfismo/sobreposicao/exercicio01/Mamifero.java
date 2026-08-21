@@ -12,6 +12,11 @@ public abstract class Mamifero {
 	}
 
 	public abstract void emitirSom();
+	
+	public void alimentar() {
+		
+		System.out.println(this.nome + " está se alimentando");
+	}
 
 	public String getNome() {
 		return nome;
